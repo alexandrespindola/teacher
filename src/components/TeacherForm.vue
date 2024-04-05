@@ -7,7 +7,8 @@
                     <div class="flex flex-row gap-3 items-center"><label>First name:</label><input type="text"></div>
                     <div class="flex flex-row gap-3 items-center"><label>Last name:</label><input type="text"></div>
                     <div class="flex flex-row gap-3 items-center"><label>DNI/NIF:</label><input type="text"></div>
-                    <div class="flex flex-row gap-3 items-center"><label>Courses</label><input type="text"><button class="button" >Include</button></div>
+                    <div class="flex flex-row gap-3 items-center"><label>Subjects</label><input type="text"><button
+                            class="button">Include</button></div>
                     <div class="flex flex-row gap-3">
                         <input type="checkbox" />
                         <p>Documentation provided</p>
@@ -23,6 +24,24 @@
 </template>
 
 <script lang="ts" setup>
+import { Ref, ref } from 'vue'
+
+interface ITeacher {
+    firstName: string,
+    lastName: string,
+    dni: string,
+    subjects: Array<string>,
+    documentation: boolean
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+let teacher: Ref<ITeacher> = ref({
+    firstName: '',
+    lastName: '',
+    dni: '',
+    subjects: [],
+    documentation: false
+})
 </script>
 
 <style scoped lang="scss">
