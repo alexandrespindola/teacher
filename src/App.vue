@@ -1,9 +1,9 @@
 <template>
-  <HelloWorld />
+  <TeacherForm/>
 </template>
 
 <script lang="ts" setup>
-import HelloWorld from './components/HelloWorld.vue'
+import TeacherForm from './components/TeacherForm.vue'
 </script>
 
 <style></style>
