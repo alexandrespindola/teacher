@@ -1,5 +1,5 @@
 <template>
-  <h1>Hello Vue</h1>
+  <h1 class="bg-green-600">Hello Vue</h1>
 </template>
 
 <script lang="ts" setup>
