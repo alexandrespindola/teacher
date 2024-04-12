@@ -1,9 +1,9 @@
 <template>
-  <TeacherForm/>
+  <PostList />
 </template>
 
 <script lang="ts" setup>
-import TeacherForm from './components/TeacherForm.vue'
+import PostList from '@/components/PostList.vue'
 </script>
 
 <style></style>
